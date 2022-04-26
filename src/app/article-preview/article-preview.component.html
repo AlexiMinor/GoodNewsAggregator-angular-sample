@@ -1,0 +1,6 @@
+<div *ngIf="article">
+  <h3>{{ article.title | uppercase }}</h3>
+  <p>{{ article.description }}</p>
+  <button (click)="navigate(article)">Click</button>
+  <a routerLink="/article/{{article.id}}">Details to {{ article.id }}</a>
+</div>

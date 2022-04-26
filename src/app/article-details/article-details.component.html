@@ -1,0 +1,5 @@
+<div *ngIf="article">
+  <h3>{{ article.title | uppercase }}</h3>
+  <p>{{article.body}}</p>
+  <button (click)="goBack()">Back</button>
+</div>
